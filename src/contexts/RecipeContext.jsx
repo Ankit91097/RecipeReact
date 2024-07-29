@@ -8,7 +8,6 @@ const RecipeContext = (props) => {
     setrecipes(JSON.parse(localStorage.getItem("recipes")) || []);
   }, []);
 
-  console.log(recipes);
   return (
     <recipecontext.Provider value={[recipes, setrecipes]}>
       {props.children}
